@@ -226,4 +226,45 @@ h3 {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
     }
+
+    .camisa__contenido {
+        grid-column: 2 / 3;
+    }
+
+}
+
+/* Formulario */
+.formulario {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.formulario__campo,
+.formulario__submit {
+    height: 6rem;
+}
+
+.formulario__campo {
+    background-color: transparent;
+    border-color: var(--primarioOscuro);
+    border-width: 1rem;
+    border-style: solid;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: var(--blanco);
+    padding: 1rem;
+}
+
+.formulario__submit {
+    grid-column: 1 / 3;
+    background-color: var(--secundario);
+    font-family: var(--fuentePrincipal);
+    font-size: 2rem;
+    border: none;
+}
+
+.formulario__submit:hover {
+    background-color: var(--secundarioOscuro);
+    cursor: pointer; /* Mano */
 }
